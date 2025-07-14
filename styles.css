@@ -1,0 +1,160 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+nav a:hover {
+    background-color: darkgrey;
+}
+nav li:first-child{
+    margin-right: auto; 
+}
+.narration {
+    background-image: url(images/landscape.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    margin-top: 0px;
+    padding: 120px;
+}
+.narration h1 {
+    font-size: 60px;
+    width: 50%;
+    color: white;
+}
+.narration p {
+    font-size: 15px;
+    color: white;
+}
+.narration button {
+    background-color: transparent;
+    color: white;
+    margin-top: 20px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+.narration button:hover {
+    background-color: transparent;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+.features h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.features p {
+    text-align: 18px;
+    text-align: center;
+}
+.gridwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.grid1 {
+    border: 2px solid black;
+    padding: 20px;
+    width: 10px;
+    border-radius: 8px;
+}
+.grid figcaption {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.tourwrapper {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+}
+.tourgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    margin-top: 40px;
+}
+.tour, .tour2, .tour3 {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 2px;
+}
+.tour:hover {
+    transform: scale(1.1);
+}
+.tour2:hover {
+    transform: scale(1.1);
+}
+.tour3:hover {
+    transform: scale(1.1);
+}
+.seemore {
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.seemore:hover {
+    background-color: green;
+}
+.button {
+    text-align: center;
+}
+.sidebar {
+    display: none;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 250px;
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+}
+.sidebar li{
+    width: 100%;
+    list-style: none;
+}
+.sidebar a {
+    width: 100%;
+}
+.menubutton {
+    display: none;
+}
